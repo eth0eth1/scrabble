@@ -28,5 +28,5 @@ Route::get('about/directions', function()
 
 Route::get('user/{theUser}', function($theUser)
 {
-	return 'Welcome to {$theUser}\'s page';
+	return "Welcome to {$theUser}'s page";
 });
