@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'mysql',
+	'default' => 'pgsql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -66,9 +66,9 @@ return array(
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'forge',
-			'username' => 'forge',
-			'password' => '',
+			'database' => 'scrabble',
+			'username' => 'scrabble',
+			'password' => 'SCRABBLE45nn3L8',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
