@@ -20,3 +20,8 @@ Route::get('about', function()
 {
 	return 'About content goes here';
 });
+
+Route::get('about/directions', function()
+{
+	return 'Directions';
+});
