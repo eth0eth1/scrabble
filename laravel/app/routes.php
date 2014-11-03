@@ -25,3 +25,8 @@ Route::get('about/directions', function()
 {
 	return 'Directions';
 });
+
+Route::get('about/{theSubject}', function($theSubject)
+{
+	return $theSubject.' Information Goes Here';
+});
