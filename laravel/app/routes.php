@@ -15,6 +15,7 @@ Route::get('/', function()
 {
 	$player = new Player;
 	$player->name = 'Test User';
+	$player->contact_number = '0999';
 	$player->save();
 
 /*
