@@ -43,6 +43,6 @@ Route::get('player/{thePlayer}', function($theUser)
 {
 	return "Creating {$thePlayer}'s page";
 	$player = new Player;
-	$player->name = {$thePlayer};
+	$player->name = $thePlayer;
 	$player->save();
 });
