@@ -49,5 +49,6 @@ Route::get('player/{thePlayer}', function($thePlayer)
 	return "Creating {$thePlayer}'s page";
 	$player = new Player;
 	$player->name = $thePlayer;
+	$player->contact_number = '0999';
 	$player->save();
 });
