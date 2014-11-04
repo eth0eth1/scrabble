@@ -13,35 +13,9 @@
 
 Route::get('/', function()
 {
-	$player = new Player;
-	$player->name = 'Test User';
-	$player->contact_number = '0999';
-	$player->save();
 
-/*
-	$painting = new Painting;
-	$painting->title = 'Do No Wrong';
-	$painting->artist = 'D . DoWright';
-	$painting->year = 2014;
-	$painting->save();
-
-	$painting = Painting::find(1);
-	$painting->title = 'Do No Wrong - Do Extra Wrong';
-	$painting->save();
-	return $painting->title;
-*/
 	return View::make('hello');
 
-});
-
-Route::get('about', function()
-{
-	return 'About content goes here';
-});
-
-Route::get('about/directions', function()
-{
-	return 'Directions';
 });
 
 Route::get('player/{thePlayer}', function($thePlayer)
