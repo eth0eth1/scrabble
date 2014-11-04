@@ -48,14 +48,15 @@ Route::get('player/{thePlayer}', function($thePlayer)
 {
 	// Check if the player exists
 	$player = DB::table('players')->where('name', $thePlayer)->first();
-	return var_dump($player->name);
-
-	/*
-	// If not, create them
-	$player = new Player;
-	$player->name = $thePlayer;
-	$player->contact_number = '0999';
-	$player->save();
-	return "Creating {$thePlayer}'s page";
-	*/
+	if (empty($player)) {
+		// If not, create them
+		$player = new Player;
+		$player->name = $thePlayer;
+		$player->contact_number = '0999';
+		$player->save();
+		return "Creating {$thePlayer}'s page";
+	} else {
+		// Or display them
+		return var_dump($player->name);
+	}
 });
