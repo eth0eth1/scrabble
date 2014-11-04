@@ -39,7 +39,7 @@ Route::get('about/directions', function()
 	return 'Directions';
 });
 
-Route::get('player/{thePlayer}', function($theUser)
+Route::get('player/{thePlayer}', function($thePlayer)
 {
 	return "Creating {$thePlayer}'s page";
 	$player = new Player;
