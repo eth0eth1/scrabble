@@ -50,10 +50,10 @@ Route::get('player/{thePlayer}', function($thePlayer)
 	$player = DB::table('players')->where('name', $thePlayer)->first();
 	if (empty($player)) {
 		// If not, create them
-		$player = new Player;
-		$player->name = $thePlayer;
-		$player->contact_number = '0999';
-		$player->save();
+		$newplayer = new Player;
+		$newplayer->name = $thePlayer;
+		$newplayer->contact_number = '0999';
+		$newplayer->save();
 		return "Creating {$thePlayer}'s page";
 	} else {
 		// Or display them
