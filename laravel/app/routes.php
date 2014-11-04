@@ -19,12 +19,13 @@ Route::get('/', function()
 	$painting->artist = 'D . DoWright';
 	$painting->year = 2014;
 	$painting->save();
-*/
+
 	$painting = Painting::find(1);
 	$painting->title = 'Do No Wrong - Do Extra Wrong';
 	$painting->save();
 	return $painting->title;
-	//return View::make('hello');
+*/
+	return View::make('hello');
 
 });
 
@@ -38,7 +39,10 @@ Route::get('about/directions', function()
 	return 'Directions';
 });
 
-Route::get('user/{theUser}', function($theUser)
+Route::get('player/{thePlayer}', function($theUser)
 {
-	return "Welcome to {$theUser}'s page";
+	return "Creating {$thePlayer}'s page";
+	$player = new Player;
+	$player->name = {$thePlayer};
+	$player->save();
 });
