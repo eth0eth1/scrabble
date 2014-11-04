@@ -13,13 +13,17 @@
 
 Route::get('/', function()
 {
+/*
 	$painting = new Painting;
 	$painting->title = 'Do No Wrong';
 	$painting->artist = 'D . DoWright';
 	$painting->year = 2014;
 	$painting->save();
+*/
+	$painting = Painting::find(1);
+	return $painting->title;
+	//return View::make('hello');
 
-	return View::make('hello');
 });
 
 Route::get('about', function()
