@@ -44,12 +44,11 @@ Route::get('about/directions', function()
 	return 'Directions';
 });
 
-Route::get('user/{theUser}', function($theUser)
+Route::get('player/{thePlayer}', function($thePlayer)
 {
 	$player = new Player;
-	$player->name = 'Another Test';
+	$player->name = $thePlayer;
 	$player->contact_number = '0999';
 	$player->save();
 	return "Creating {$theUser}'s page";
-
 });
