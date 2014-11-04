@@ -46,9 +46,10 @@ Route::get('about/directions', function()
 
 Route::get('player/{thePlayer}', function($thePlayer)
 {
-	return "Creating {$thePlayer}'s page";
 	$player = new Player;
-	$player->name = $thePlayer;
+	$player->name = 'Another Test';
 	$player->contact_number = '0999';
 	$player->save();
+	return "Creating {$thePlayer}'s page";
+
 });
