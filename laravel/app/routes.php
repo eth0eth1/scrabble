@@ -15,7 +15,7 @@ Route::get('/', function()
 {
 	$painting = new Painting;
 	$painting->title = 'Do No Wrong';
-	$painting->artists = 'D . DoWright';
+	$painting->artist = 'D . DoWright';
 	$painting->year = 2014;
 	$painting->save();
 
