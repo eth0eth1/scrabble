@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	Schema::create('art', function($newtable)
+/*	Schema::create('art', function($newtable)
 	{
 		$newtable->increments('id');
 		$newtable->string('artist');
@@ -23,7 +23,7 @@ Route::get('/', function()
 		$newtable->date('exhibition');
 		$newtable->timestamps();
 	});
-
+*/
 	return View::make('hello');
 });
 

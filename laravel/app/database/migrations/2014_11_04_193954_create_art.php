@@ -12,7 +12,16 @@ class CreateArt extends Migration {
 	 */
 	public function up()
 	{
-		//
+	Schema::create('art2', function($newtable)
+	{
+		$newtable->increments('id');
+		$newtable->string('artist');
+		$newtable->string('title');
+		$newtable->text('description');
+		$newtable->date('created');
+		$newtable->date('exhibition');
+		$newtable->timestamps();
+	});
 	}
 
 	/**
@@ -22,7 +31,7 @@ class CreateArt extends Migration {
 	 */
 	public function down()
 	{
-		//
+	Schema::drop('art2');
 	}
 
 }
