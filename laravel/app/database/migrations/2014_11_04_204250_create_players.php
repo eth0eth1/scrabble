@@ -13,12 +13,12 @@ class CreatePlayers extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('players', function($newtable)
+		Schema::create('players', function($thePlayer)
 		{
-			$newtable->increments('id');
-			$newtable->string('name');
-			$newtable->string('contact_number');
-			$newtable->timestamps();
+			$thePlayer->increments('id');
+			$thePlayer->string('name');
+			$thePlayer->string('contact_number');
+			$thePlayer->timestamps();
 		});
 	}
 

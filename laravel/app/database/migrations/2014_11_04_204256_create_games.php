@@ -14,15 +14,15 @@ class CreateGames extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('games', function($table)
+		Schema::create('games', function($theGame)
 		{
-			$table->increments('id');
-			$table->string('location');
-			$table->integer('player1_id')->unsigned();
-			$table->foreign('player1_id')->references('id')->on('players');
-			$table->integer('player2_id')->unsigned();
-			$table->foreign('player2_id')->references('id')->on('players');
-			$table->timestamps();
+			$theGame->increments('id');
+			$theGame->string('location');
+			$theGame->integer('player1_id')->unsigned();
+			$theGame->foreign('player1_id')->references('id')->on('players');
+			$theGame->integer('player2_id')->unsigned();
+			$theGame->foreign('player2_id')->references('id')->on('players');
+			$theGame->timestamps();
 		});
 	}
 
