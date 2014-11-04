@@ -13,6 +13,10 @@
 
 Route::get('/', function()
 {
+	$player = new Player;
+	$player->name = 'Test User';
+	$player->save();
+
 /*
 	$painting = new Painting;
 	$painting->title = 'Do No Wrong';
