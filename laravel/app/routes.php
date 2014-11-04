@@ -21,6 +21,8 @@ Route::get('/', function()
 	$painting->save();
 */
 	$painting = Painting::find(1);
+	$painting->title = 'Do No Wrong - Do Extra Wrong';
+	$painting->save();
 	return $painting->title;
 	//return View::make('hello');
 
