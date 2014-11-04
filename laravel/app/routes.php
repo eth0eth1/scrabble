@@ -50,5 +50,5 @@ Route::get('player/{thePlayer}', function($thePlayer)
 	$player->name = $thePlayer;
 	$player->contact_number = '0999';
 	$player->save();
-	return "Creating {$theUser}'s page";
+	return "Creating {$thePlayer}'s page";
 });
