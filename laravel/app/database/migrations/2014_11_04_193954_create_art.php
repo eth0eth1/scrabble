@@ -31,7 +31,7 @@ class CreateArt extends Migration {
 	 */
 	public function down()
 	{
-	//Schema::drop('art2');
+	Schema::drop('art2');
 	}
 
 }
