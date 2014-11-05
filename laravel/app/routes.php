@@ -13,6 +13,7 @@
 
 Route::get('/', function()
 {
+	$theLandmarks = array('Museam','Wood Green', 'Kitiah', 'Dog', 'Cat');
 	return View::make('hello', array('theLocation' => 'LDN', 'theWeather' => false));
 });
 

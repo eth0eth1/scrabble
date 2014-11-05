@@ -43,6 +43,11 @@
 		@else
 			<p>No forecast</p>
 		@endif
+		<p>Don't miss:</p>
+		<ul style="text-align:left">
+			@foreach($theLandmarks as $landmark)
+				<li>{{$landmark}}</li>
+		</ul>
 	</div>
 </body>
 </html>
