@@ -43,12 +43,14 @@
 
      {{ Form::label('comment', 'Comments')}}
      
-     {{ Form::textarea('comment', '', array('placeholder' => 'What?'))}}
+     {{ Form::textarea('comment', '', array('placeholder' => 'What are your interests'))}}
 
      {{ Form::checkbox('agree','yes',false)}}
      {{ Form::label('agree', 'I agree your terms of serivce')}}
 
      {{ Form::submit('Sign Up')}}
 {{ Form::close() }}
+
+
 </body>
 </html>
