@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('hello', array('theLocation' => 'LDN'));
+	return View::make('hello', array('theLocation' => 'LDN', 'theWeather' => 'snow'));
 });
 
 Route::get('player/{thePlayer}', function($thePlayer)
