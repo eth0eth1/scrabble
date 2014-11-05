@@ -47,6 +47,7 @@
 		<ul style="text-align:left">
 			@foreach($theLandmarks as $landmark)
 				<li>{{$landmark}}</li>
+			@endforeach
 		</ul>
 	</div>
 </body>
