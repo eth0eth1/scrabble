@@ -33,3 +33,8 @@ Route::get('player/{thePlayer}', function($thePlayer)
 		return var_dump($player->name);
 	}
 });
+
+Route::get('signup', function()
+{
+	return View::make('signup');
+});
