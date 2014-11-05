@@ -43,4 +43,4 @@ Route::post('thanks', function()
 {
 	$theEmail = Input::get('email');
 	return View::make('thanks')->with('theEmail', $theEmail);
-})
+});
