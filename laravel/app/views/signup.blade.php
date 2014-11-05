@@ -34,6 +34,20 @@
     {{ Form::label('email','Email Address')}}
     {{ Form::text('email')}}
 
+    {{ Form::label('os','Operating System')}}
+    {{ Form::select('os', array(
+     'linux' => 'Linux',
+     'mac' => 'Mac OS X',
+     'windows' => 'Windows'
+     ))}}
+
+     {{ Form::label('comment', 'Comments')}}
+     {{ Form::textarea('comment', '', array('placeholder => 'What are your interests'))}}
+
+     {{ Form::checkbox('agree','yes',false)}}
+     {{ Form::label('agree', 'I agree your terms of serivce')}}
+
+
 {{ Form::close() }}
 </body>
 </html>
