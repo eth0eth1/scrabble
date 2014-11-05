@@ -29,7 +29,7 @@
 
 <body>
 <h1>Newsletter sign up</h1>
-{{ Form::open(array('url' => 'thanks')}}
+{{ Form::open(array('url' => 'thanks')) }}
 
     {{ Form::label('email','Email Address')}}
     {{ Form::text('email')}}
