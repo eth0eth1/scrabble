@@ -48,7 +48,6 @@
      {{ Form::label('agree', 'I agree your terms of serivce')}}
 
      {{ Form::submit('Sign Up')}}
-
 {{ Form::close() }}
 </body>
 </html>
