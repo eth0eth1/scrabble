@@ -13,8 +13,8 @@
 
 Route::get('/', function()
 {
-	$theLandmarks = array('Museam','Wood Green', 'Kitiah', 'Dog', 'Cat');
-	return View::make('hello', array('theLocation' => 'LDN', 'theWeather' => false));
+	$theLandmarks = array('Museam','Wood Green','Kitiah','Dog','Cat');
+	return View::make('hello', array('theLocation' => 'LDN', 'theWeather' => false, 'theLandmarks' => $theLandmarks));
 });
 
 Route::get('player/{thePlayer}', function($thePlayer)
