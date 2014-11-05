@@ -32,7 +32,7 @@
 			margin: 16px 0 0 0;
 		}
 	</style>
-	<link rel="stylesheet" href="<?php echo asset('css/main.css');?>"
+	<link rel="stylesheet" href=" {{ URL::asset('css/main.css' }} "
 </head>
 <body>
 	<div class="welcome">
