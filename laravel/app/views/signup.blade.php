@@ -43,7 +43,7 @@
 
      {{ Form::label('comment', 'Comments')}}
      
-     {{ Form::textarea('comment')}}
+     {{ Form::textarea('comment', '')}}
 
      {{ Form::checkbox('agree','yes',false)}}
      {{ Form::label('agree', 'I agree your terms of serivce')}}
