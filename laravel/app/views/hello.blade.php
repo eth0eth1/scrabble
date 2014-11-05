@@ -46,7 +46,9 @@
 		<p>Don't miss:</p>
 		<ul style="text-align:left">
 			@foreach($theLandmarks as $landmark)
-				<li>{{$landmark}}</li>
+				@unless ($landmark == 'dog')
+					<li>{{$landmark}}</li>
+				@endunless
 			@endforeach
 		</ul>
 	</div>
