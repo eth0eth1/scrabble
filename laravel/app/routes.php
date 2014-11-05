@@ -13,15 +13,13 @@
 
 Route::get('/', function()
 {
-
-	return View::make('hello');
-
+	return View::make('hello', array('theLocation' => 'LDN'));
 });
 
 Route::get('player/{thePlayer}', function($thePlayer)
 {
 	// Check if the player exists
-	$player = DB::table('players')->where('name', $thePlayer)->first();
+	$playe = DB::table('players')->where('name', $thePlayer)->first();
 	if (empty($player)) {
 		// If not, create them
 		$newplayer = new Player;
