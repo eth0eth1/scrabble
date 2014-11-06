@@ -4,11 +4,11 @@ body {
 	margin:0;
 	font-family:'Lato', sans-serif;
 	text-align:center;
-	color: #999;
+	color: #FFFFFF;
+	background: #157415;
 }
 
 .welcome {
-	width: 300px;
 	height: 200px;
 	position: absolute;
 	left: 50%;
