@@ -20,7 +20,7 @@ Route::get('/', function()
 Route::get('player/{thePlayer}', function($thePlayer)
 {
 	// Check if the player exists
-	$playe = DB::table('players')->where('name', $thePlayer)->first();
+	$player = DB::table('players')->where('name', $thePlayer)->first();
 	if (empty($player)) {
 		// If not, create them
 		$newplayer = new Player;
