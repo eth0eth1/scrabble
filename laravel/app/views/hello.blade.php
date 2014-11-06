@@ -18,7 +18,7 @@
 
 		{{ Form::open(array('url' => 'thanks')) }}
 			{{ Form::text('email', '', array('placeholder' => 'Username')) }}
-			{{ Form::password('password', 'Placeholder' }}
+			{{ Form::password('password', 'Placeholder') }}
      		{{ Form::submit('Login')}}
 		{{ Form::close() }}
 
