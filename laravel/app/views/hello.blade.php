@@ -15,6 +15,14 @@
 			<p>No forecast</p>
 		@endif
 		<p>Don't miss:</p>
+
+		{{ Form::open(array('url' => 'thanks')) }}
+			{{ Form::text('email', '', array('placeholder' => 'Username')) }}
+			{{ Form::text('password', '', array('placeholder' => 'Password')) }}
+     		{{ Form::submit('Login')}}
+		{{ Form::close() }}
+
+
 		<ul style="text-align:left">
 			@foreach($theLandmarks as $landmark)
 				@unless ($landmark == 'Dog')
