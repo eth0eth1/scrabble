@@ -8,7 +8,7 @@
 <body>
 	<div class="welcome">
 		<a href="http://laravel.com" title="Scrabble Leaderboard"><img src="{{ URL::asset('image/scrabble.png') }}" alt="Scrabble Logo"></a>
-		<h1 class="highlight">Scrabble has arrived in {{ $theLocation }} on {{ date('d M Y')}}.</h1>
+		<h1 class="highlight">Welcome to Scrabble Score! {{ $theLocation }} on {{ date('d M Y')}}.</h1>
 		@if($theWeather)
 			<p>It's a {{$theWeather}} day.</p>
 		@else
