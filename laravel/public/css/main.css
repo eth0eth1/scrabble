@@ -4,8 +4,8 @@ body {
 	margin:0;
 	font-family:'Lato', sans-serif;
 	text-align:center;
-	color: #FFFFFF;
-	background: #157415;
+	Xcolor: #FFFFFF;
+	Xbackground: #157415;
 }
 
 .welcome {
@@ -17,8 +17,8 @@ a, a:visited {
 }
 
 h1 {
-	font-size: 32px;
-	margin: 16px 0 0 0;
+	Xfont-size: 32px;
+	Xmargin: 16px 0 0 0;
 }
 
 .highlight {

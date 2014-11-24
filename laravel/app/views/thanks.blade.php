@@ -9,7 +9,8 @@
 </head>
 
 <body>
-<h1>Thanks! We'll send your first email to: {{ $theEmail }}</h1>
+<h1>Thanks!</h1>
+<p> {{ $player_name }} Is now registered </p>
 
 </body>
 </html>

@@ -28,27 +28,14 @@
 </head>
 
 <body>
-<h1>Newsletter sign up</h1>
-{{ Form::open(array('url' => 'thanks')) }}
+<h1>Login</h1>
+<!-- Login Form -->
+{{ Form::open(array('url' => 'login')) }}
 
-    {{ Form::label('email','Email Address')}}
-    {{ Form::text('email')}}
+     {{ Form::text('name', '', array('placeholder' => 'Name'))}}
+     {{ Form::password('password', array('placeholder' => 'Password')) }}
+     {{ Form::submit('Login')}}
 
-    {{ Form::label('os','Operating System')}}
-    {{ Form::select('os', array(
-     'linux' => 'Linux',
-     'mac' => 'Mac OS X',
-     'windows' => 'Windows'
-     ))}}
-
-     {{ Form::label('comment', 'Comments')}}
-     
-     {{ Form::textarea('comment', '', array('placeholder' => 'What are your interests'))}}
-
-     {{ Form::checkbox('agree','yes',false)}}
-     {{ Form::label('agree', 'I agree your terms of serivce')}}
-
-     {{ Form::submit('Sign Up')}}
 {{ Form::close() }}
 
 
