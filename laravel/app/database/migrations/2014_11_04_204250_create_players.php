@@ -18,7 +18,7 @@ class CreatePlayers extends Migration {
 			$thePlayer->increments('id');
 			$thePlayer->string('name', 100)->unique();
 			$thePlayer->string('password', 100);
-			$thePlayer->string('remember_token', 100);
+			$thePlayer->string('remember_token', 100)->nullable;
 			$thePlayer->string('contact_number')->nullable();
 			$thePlayer->text('bio')->nullable();
 			$thePlayer->timestamps();
